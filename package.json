@@ -3,6 +3,9 @@
   "version": "1.0.6",
   "description": "A modern HTML5 multiplayer adventure!",
   "license": "wtfpl-2.0",
+  "engines": {
+    "node" : ">=11.6.0"
+  },
   "scripts": {
     "start": "webpack --mode=development",
     "wtfserver": "nodemon --exec babel-node src/server/js/main.js",
