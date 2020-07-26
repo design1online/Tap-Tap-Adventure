@@ -126,10 +126,6 @@ export default class Renderer {
       return;
     }
 
-    console.log('camera grid width');
-    console.log('camera tile size', this.tileSize);
-
-
     this.screenWidth = this.camera.gridWidth * this.tileSize;
     this.screenHeight = this.camera.gridHeight * this.tileSize;
 

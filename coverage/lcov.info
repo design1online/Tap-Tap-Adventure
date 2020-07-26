@@ -6774,7 +6774,7 @@ end_of_record
 TN:
 SF:/Applications/MAMP/htdocs/WTF-Adventure/src/client/js/lib/astar.js
 FN:6,(anonymous_0)
-FN:7,(anonymous_1)
+FN:7,diagonalSuccessors
 FN:33,diagonalSuccessorsFree
 FN:63,nothingToDo
 FN:81,successors
@@ -6785,7 +6785,7 @@ FN:113,AStar
 FNF:9
 FNH:1
 FNDA:1,(anonymous_0)
-FNDA:0,(anonymous_1)
+FNDA:0,diagonalSuccessors
 FNDA:0,diagonalSuccessorsFree
 FNDA:0,nothingToDo
 FNDA:0,successors
@@ -6794,7 +6794,6 @@ FNDA:0,euclidean
 FNDA:0,manhattan
 FNDA:0,AStar
 DA:6,1
-DA:7,1
 DA:22,0
 DA:23,0
 DA:24,0
@@ -6880,8 +6879,8 @@ DA:183,0
 DA:185,0
 DA:189,0
 DA:192,1
-LF:87
-LH:3
+LF:86
+LH:2
 BRDA:22,0,0,0
 BRDA:22,0,1,0
 BRDA:23,1,0,0
@@ -6992,8 +6991,8 @@ DA:75,79
 DA:76,79
 DA:80,79
 DA:87,79
-DA:88,34
-DA:91,45
+DA:88,0
+DA:91,79
 DA:106,79
 DA:107,77
 DA:109,2
@@ -7018,7 +7017,7 @@ DA:179,0
 DA:180,0
 DA:181,0
 LF:47
-LH:32
+LH:31
 BRDA:34,0,0,0
 BRDA:36,1,0,2
 BRDA:36,1,1,0
@@ -7030,8 +7029,8 @@ BRDA:64,4,0,0
 BRDA:64,4,1,79
 BRDA:71,5,0,79
 BRDA:71,5,1,0
-BRDA:87,6,0,34
-BRDA:87,6,1,45
+BRDA:87,6,0,0
+BRDA:87,6,1,79
 BRDA:106,7,0,77
 BRDA:106,7,1,2
 BRDA:130,8,0,17
@@ -7055,7 +7054,7 @@ BRDA:178,16,1,0
 BRDA:178,17,0,0
 BRDA:178,17,1,0
 BRF:35
-BRH:12
+BRH:11
 end_of_record
 TN:
 SF:/Applications/MAMP/htdocs/WTF-Adventure/src/client/js/map/map.js

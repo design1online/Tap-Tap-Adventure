@@ -237,7 +237,7 @@ export default class Entities {
 
       case 'player':
         const player = new Player(); // eslint-disable-line
-        console.log('loading player entity data', info);
+        log.debug('Entities - loading player entity data', info);
 
         player.setId(info.id);
         player.setName(info.name);
@@ -481,7 +481,6 @@ export default class Entities {
   * @return {Chest|NPC|Item|Mob|Projectile|Player}
   */
   getSprite(name) {
-    console.log('get sprite', name);
     log.debug('Entities - getSprite()', name);
     return this.sprites.sprites[name];
   }

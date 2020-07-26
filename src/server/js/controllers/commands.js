@@ -202,7 +202,6 @@ export default class Commands {
         break;
 
       case 'nohit':
-        console.log('invincinil');
         this.player.invincible = !this.player.invincible;
         break;
 

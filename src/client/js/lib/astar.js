@@ -3,7 +3,7 @@
 * @author  Andrea Giammarchi
 * @license Mit Style License
 */
-define(() => (function () {
+const Astar = () => {
   function diagonalSuccessors(
     $N,
     $S,
@@ -190,4 +190,6 @@ define(() => (function () {
   }
 
   return AStar;
-}()));
+};
+
+export default Astar();

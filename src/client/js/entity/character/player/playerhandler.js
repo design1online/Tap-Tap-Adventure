@@ -1,4 +1,5 @@
 import Packets from '../../../network/packets';
+import log from '../../../lib/log';
 
 /**
  * This is a player handler, responsible for all the callbacks
@@ -40,7 +41,6 @@ export default class PlayerHandler {
 
     this.player.onStartPathing((path) => {
       const i = path.length - 1;
-      console.log('path is', path);
 
       this.input.selectedX = path[i][0]; // eslint-disable-line
       this.input.selectedY = path[i][1]; // eslint-disable-line
@@ -143,7 +143,7 @@ export default class PlayerHandler {
     });
 
     this.player.onUpdateArmour((armourName) => {
-      console.log('update player sprite armour', armourName);
+      log.debug('Player - onUpdateArmour', armourName);
       this.player.setSprite(this.game.getSprite(armourName));
     });
   }

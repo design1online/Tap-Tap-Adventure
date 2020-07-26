@@ -5,6 +5,7 @@ import Pendant from './equipment/pendant';
 import Boots from './equipment/boots';
 import Ring from './equipment/ring';
 import Modules from '../../../utils/modules';
+import log from '../../../lib/log';
 
 /**
  * Player
@@ -102,7 +103,7 @@ export default class Player extends Character {
   }
 
   getSpriteName() {
-    console.log('get player sprite armour', this.armour);
+    log.debug('Player - getSpriteName()', this.armour);
     return this.armour ? this.armour.name : 'clotharmor';
   }
 
@@ -142,7 +143,7 @@ export default class Player extends Character {
     const ability = info.shift();
     const abilityLevel = info.shift();
 
-    console.log('setting player equipment', type, info);
+    log.debug('Player - setEquipment()', type, info);
 
     switch (type) {
       case Modules.Equipment.Armour:
